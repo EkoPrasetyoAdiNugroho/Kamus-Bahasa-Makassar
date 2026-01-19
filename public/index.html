@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Bahasa Daerah</title>
+
+    <!-- Fonts: Inter for Modern Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Main Content (Left Side) -->
+    <main class="app-main">
+        <header class="main-header">
+            <!-- Dynamic Title based on View -->
+            <h2 id="pageTitle">Dashboard</h2>
+            <p class="subtitle">Welcome Back !</p>
+        </header>
+
+        <div class="main-content">
+
+            <!-- VIEW: DASHBOARD -->
+            <section id="dashboard" class="view-section active">
+                <!-- Hero Card -->
+                <div class="card hero-card">
+                    <h3>Premium Dictionary</h3>
+                    <p>Upgrade to access advanced linguistic features, offline mode, and API access.</p>
+                </div>
+
+                <!-- Three Main Action Cards -->
+                <div class="action-grid">
+                    <div class="action-card" onclick="document.querySelector('[data-target=search]').click()">
+                        <div class="action-icon-box" style="background-color: #fce8e6; color: #d93025;">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="action-title">Cari Kata</div>
+                        <div class="action-desc">Terjemahkan Indonesia ke Daerah atau sebaliknya.</div>
+                    </div>
+
+                    <div class="action-card" onclick="document.querySelector('[data-target=stats]').click()">
+                        <!-- Pseudo-trigger for stats/history -->
+                        <div class="action-icon-box" style="background-color: #e6f4ea; color: #137333;">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="action-title">Statistik Data</div>
+                        <div class="action-desc"><span id="statTotalWordsDash">...</span> Kata tersedia dalam database.
+                        </div>
+                    </div>
+
+                    <div class="action-card" onclick="document.querySelector('[data-target=history]').click()">
+                        <div class="action-icon-box" style="background-color: #f3e8ff; color: #9334e6;">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="action-title">Riwayat</div>
+                        <div class="action-desc">Lihat <span id="statTotalSearches">0</span> pencarian terakhir sesi
+                            ini.</div>
+                    </div>
+                </div>
+
+                <!-- Recent Sets / Content -->
+                <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Recent Activity</h3>
+                <div class="card"
+                    style="min-height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column; color: var(--text-muted);">
+
+                    <div id="dashboardHistoryPreview" style="width: 100%;">
+                        <!-- Content injected by JS -->
+                        <div style="text-align: center;">
+                            <i class="fas fa-file-alt" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;"></i>
+                            <p>Belum ada aktivitas pencarian.</p>
+                            <button class="btn-primary" onclick="document.querySelector('[data-target=search]').click()"
+                                style="margin-top: 1rem;">Mulai Mencari</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW: STATISTICS (Dictionary Explorer) -->
+            <section id="stats" class="view-section">
+                <div class="explorer-container">
+                    <!-- Header -->
+                    <div class="explorer-header">
+                        <div>
+                            <h3>Kamus Kosakata Makassar</h3>
+                            <p style="margin-top: 4px; color: var(--text-muted); font-size: 0.9rem;">
+                                Total Data: <b style="color: var(--primary-color);"><span
+                                        id="explorerTotalWords">...</span></b> kata
+                            </p>
+                        </div>
+                        <div class="explorer-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="explorerSearchInput" placeholder="Cari kata dalam kamus...">
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="explorer-tabs">
+                        <div class="explorer-tab active" data-tab="alphabet">Alphabet</div>
+                        <div class="explorer-tab" data-tab="lontara">Lontara</div>
+                        <div class="explorer-tab" data-tab="kelas">Kelas Kata</div>
+                    </div>
+
+                    <!-- Filters (Dynamic) -->
+                    <div class="explorer-filters" id="explorerFilters">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <!-- List -->
+                    <div class="explorer-list" id="explorerList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW: SEARCH -->
+            <section id="search" class="view-section">
+                <!-- Search Component -->
+                <div class="search-card">
+                    <div class="card-header">
+                        <h2>Mulai Pencarian</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="searchForm">
+                            <div class="form-group">
+                                <label for="keyword">Kata Kunci</label>
+                                <input type="text" id="keyword" name="keyword" placeholder="Contoh: Makan..." required
+                                    autocomplete="off">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="algorithm">Algoritma</label>
+                                    <select id="algorithm" name="algorithm">
+                                        <option value="naive">Naive String Matching</option>
+                                        <option value="kmp">Knuth-Morris-Pratt (KMP)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="language">Arah Bahasa</label>
+                                    <select id="language" name="language">
+                                        <option value="id_to_regional">Indonesia -> Daerah</option>
+                                        <option value="regional_to_id">Daerah -> Indonesia</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Telusuri Database</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Result Component -->
+                <div id="loadingState" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Memproses...</p>
+                </div>
+
+                <div id="resultSection" class="result-card hidden">
+                    <div class="card-header">
+                        <h2>Hasil Ditemukan</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="result-content">
+                            <div class="result-item main-result">
+                                <span class="label">Kata</span>
+                                <span class="value" id="resWord">...</span>
+                            </div>
+                            <div class="result-item main-result">
+                                <span class="label">Arti</span>
+                                <span class="value" id="resMeaning">...</span>
+                            </div>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="meta-info">
+                            <h3>Performance Metrics</h3>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <span class="label">Algoritma</span>
+                                    <span class="value" id="resAlgorithm">...</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Perbandingan</span>
+                                    <span class="value" id="resComparisons">0</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Index</span>
+                                    <span class="value" id="resIndex">-1</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Time</span>
+                                    <span class="value" id="resTime">0 ms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="noResult" class="no-result hidden">
+                    <div class="icon-box"><i class="fas fa-search-minus"></i></div>
+                    <p>Kata tidak ditemukan dalam kamus.</p>
+                </div>
+
+                <div id="errorSection" class="error-msg hidden">
+                    <p id="errorMessage">Terjadi kesalahan.</p>
+                </div>
+            </section>
+
+            <!-- VIEW: HISTORY -->
+            <section id="history" class="view-section">
+                <div class="card">
+                    <div
+                        style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 1.5rem;">
+                        <h3>Riwayat Pencarian</h3>
+                        <button class="btn-primary" id="btnClearHistory"
+                            style="padding: 8px 16px; font-size: 0.85rem; background: #fee2e2; color: #ef4444; border: none;">
+                            <i class="fas fa-trash-alt" style="margin-right: 5px;"></i> Hapus
+                        </button>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Waktu</th>
+                                <th>Kata Kunci</th>
+                                <th>Algoritma</th>
+                                <th>Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- VIEW: SETTINGS -->
+            <section id="settings" class="view-section">
+
+
+                <div class="card">
+                    <h3>Preferensi Pencarian</h3>
+                    <div class="form-group">
+                        <label>Algoritma Default</label>
+                        <select class="form-control"
+                            style="width: 100%; max-width: 300px; padding: 10px; border-radius: 8px; border: 1px solid var(--border-color);">
+                            <option>Knuth-Morris-Pratt (KMP)</option>
+                            <option>Naive String Matching</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Sidebar (Right) -->
+    <aside class="app-sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-shapes" style="color: var(--primary-color);"></i>
+            <span>Balla’ Bahasa</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-target="dashboard">
+                <i class="fas fa-th-large nav-icon"></i>
+                Dashboard
+            </a>
+            <a href="#" class="nav-item" data-target="search">
+                <i class="fas fa-search nav-icon"></i>
+                Cari Kata
+            </a>
+            <a href="#" class="nav-item" data-target="stats">
+                <i class="fas fa-chart-bar nav-icon"></i>
+                Statistik
+            </a>
+            <a href="#" class="nav-item" data-target="history">
+                <i class="fas fa-history nav-icon"></i>
+                Riwayat
+            </a>
+            <a href="#" class="nav-item" data-target="settings">
+                <i class="fas fa-cog nav-icon"></i>
+                Pengaturan
+            </a>
+        </nav>
+
+        <div class="user-profile-web">
+            <div class="user-avatar">AD</div>
+            <div class="user-info">
+                <strong>Admin</strong>
+                <small style="color: var(--text-muted)">admin@kamus.com</small>
+            </div>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

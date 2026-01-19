@@ -1,0 +1,1661 @@
+[
+    {
+        "indonesia": "Abu-abu",
+        "daerah": "Barumbung",
+        "lontara": "ᨅᨑᨘᨅᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Abu-abu"
+    },
+    {
+        "indonesia": "Ada",
+        "daerah": "Nia'",
+        "lontara": "ᨊᨗᨕ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ada"
+    },
+    {
+        "indonesia": "Adik",
+        "daerah": "Andi'",
+        "lontara": "ᨕᨉᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Adik"
+    },
+    {
+        "indonesia": "Adu",
+        "daerah": "Jamma'",
+        "lontara": "ᨍᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Adu"
+    },
+    {
+        "indonesia": "Air",
+        "daerah": "Je'ne'",
+        "lontara": "ᨍᨙᨊᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Air"
+    },
+    {
+        "indonesia": "Air liur",
+        "daerah": "Bebe",
+        "lontara": "ᨅᨙᨅᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Air liur"
+    },
+    {
+        "indonesia": "Akal",
+        "daerah": "Akkala'",
+        "lontara": "ᨕᨀᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Akal"
+    },
+    {
+        "indonesia": "Akar",
+        "daerah": "Aka'",
+        "lontara": "ᨕᨀ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Akar"
+    },
+    {
+        "indonesia": "Alir",
+        "daerah": "Lo'loso'",
+        "lontara": "ᨒᨚᨒᨚᨔᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Alir"
+    },
+    {
+        "indonesia": "Ambil",
+        "daerah": "Alle",
+        "lontara": "ᨕᨒᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ambil"
+    },
+    {
+        "indonesia": "Amis",
+        "daerah": "Manynyere'",
+        "lontara": "ᨆᨎᨙᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Amis"
+    },
+    {
+        "indonesia": "Ampas",
+        "daerah": "Garo'mese'",
+        "lontara": "ᨁᨑᨚᨆᨙᨔᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ampas"
+    },
+    {
+        "indonesia": "Amuk",
+        "daerah": "Jallo'",
+        "lontara": "ᨍᨒᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Amuk"
+    },
+    {
+        "indonesia": "Angin",
+        "daerah": "Anging",
+        "lontara": "ᨕᨃᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Angin"
+    },
+    {
+        "indonesia": "Angker",
+        "daerah": "Karrasa'",
+        "lontara": "ᨀᨑᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Angker"
+    },
+    {
+        "indonesia": "Antara",
+        "daerah": "Alla'",
+        "lontara": "ᨕᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Antara"
+    },
+    {
+        "indonesia": "April",
+        "daerah": "Aberele",
+        "lontara": "ᨕᨅᨙᨑᨙᨒᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: April"
+    },
+    {
+        "indonesia": "Asal",
+        "daerah": "Assala'",
+        "lontara": "ᨕᨔᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Asal"
+    },
+    {
+        "indonesia": "Asap",
+        "daerah": "Rumbu",
+        "lontara": "ᨑᨘᨅᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Asap"
+    },
+    {
+        "indonesia": "Ashar",
+        "daerah": "Asara'",
+        "lontara": "ᨕᨔᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ashar"
+    },
+    {
+        "indonesia": "Asin",
+        "daerah": "Ce'la",
+        "lontara": "ᨌᨙᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Asin"
+    },
+    {
+        "indonesia": "Aspal",
+        "daerah": "Tere'",
+        "lontara": "ᨈᨙᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Aspal"
+    },
+    {
+        "indonesia": "Atas",
+        "daerah": "Rate",
+        "lontara": "ᨑᨈᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Atas"
+    },
+    {
+        "indonesia": "Awan",
+        "daerah": "Rammang",
+        "lontara": "ᨑᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Awan"
+    },
+    {
+        "indonesia": "Ayam",
+        "daerah": "Jangang",
+        "lontara": "ᨍᨃ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ayam"
+    },
+    {
+        "indonesia": "Bagus / Baik",
+        "daerah": "Baji'",
+        "lontara": "ᨅᨍᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bagus / Baik"
+    },
+    {
+        "indonesia": "Bahu",
+        "daerah": "Salanggang",
+        "lontara": "ᨔᨒᨁ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bahu"
+    },
+    {
+        "indonesia": "Balai-balai bambu",
+        "daerah": "Dasere'",
+        "lontara": "ᨉᨔᨙᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Balai-balai bambu"
+    },
+    {
+        "indonesia": "Bakul",
+        "daerah": "Baku'",
+        "lontara": "ᨅᨀᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bakul"
+    },
+    {
+        "indonesia": "Bangkai",
+        "daerah": "Bakke",
+        "lontara": "ᨅᨀᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bangkai"
+    },
+    {
+        "indonesia": "Bangku",
+        "daerah": "Bangko",
+        "lontara": "ᨅᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bangku"
+    },
+    {
+        "indonesia": "Bantal",
+        "daerah": "Pa'lungang",
+        "lontara": "ᨄᨒᨘᨃ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bantal"
+    },
+    {
+        "indonesia": "Barat",
+        "daerah": "Lau'",
+        "lontara": "ᨒᨕᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Barat"
+    },
+    {
+        "indonesia": "Basah kuyup",
+        "daerah": "Do'mese'",
+        "lontara": "ᨉᨚᨆᨙᨔᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Basah kuyup"
+    },
+    {
+        "indonesia": "Basi",
+        "daerah": "Bari",
+        "lontara": "ᨅᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Basi"
+    },
+    {
+        "indonesia": "Baskom",
+        "daerah": "Katoang",
+        "lontara": "ᨀᨈᨚᨕ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Baskom"
+    },
+    {
+        "indonesia": "Batal",
+        "daerah": "Gesara'",
+        "lontara": "ᨁᨙᨔᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Batal"
+    },
+    {
+        "indonesia": "Bawah",
+        "daerah": "Rawa",
+        "lontara": "ᨑᨓ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bawah"
+    },
+    {
+        "indonesia": "Bayangan",
+        "daerah": "Taung-taung",
+        "lontara": "ᨈᨕᨘᨈᨕᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bayangan"
+    },
+    {
+        "indonesia": "Bebas",
+        "daerah": "Lappasa'",
+        "lontara": "ᨒᨄᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bebas"
+    },
+    {
+        "indonesia": "Begitu",
+        "daerah": "Kamma",
+        "lontara": "ᨀᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Begitu"
+    },
+    {
+        "indonesia": "Bekerja",
+        "daerah": "Anjama",
+        "lontara": "ᨕᨍᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bekerja"
+    },
+    {
+        "indonesia": "Belakang",
+        "daerah": "Boko",
+        "lontara": "ᨅᨚᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Belakang"
+    },
+    {
+        "indonesia": "Belalang",
+        "daerah": "Katimbang",
+        "lontara": "ᨀᨈᨗᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Belalang"
+    },
+    {
+        "indonesia": "Belang",
+        "daerah": "Ballang",
+        "lontara": "ᨅᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Belang"
+    },
+    {
+        "indonesia": "Beli",
+        "daerah": "Balli",
+        "lontara": "ᨅᨒᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Beli"
+    },
+    {
+        "indonesia": "Belut",
+        "daerah": "Lenrong",
+        "lontara": "ᨒᨙᨋᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Belut"
+    },
+    {
+        "indonesia": "Benang",
+        "daerah": "Bannang",
+        "lontara": "ᨅᨊ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Benang"
+    },
+    {
+        "indonesia": "Bengkak",
+        "daerah": "Kambang",
+        "lontara": "ᨀᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bengkak"
+    },
+    {
+        "indonesia": "Benjol",
+        "daerah": "Gimpe",
+        "lontara": "ᨁᨗᨇᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Benjol"
+    },
+    {
+        "indonesia": "Berani",
+        "daerah": "Barani",
+        "lontara": "ᨅᨑᨊᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Berani"
+    },
+    {
+        "indonesia": "Beras",
+        "daerah": "Berasa'",
+        "lontara": "ᨅᨙᨑᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Beras"
+    },
+    {
+        "indonesia": "Berdiri",
+        "daerah": "Menteng",
+        "lontara": "ᨆᨙᨈᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Berdiri"
+    },
+    {
+        "indonesia": "Berhenti",
+        "daerah": "Ammari",
+        "lontara": "ᨕᨆᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Berhenti"
+    },
+    {
+        "indonesia": "Berjalan",
+        "daerah": "Ajjappa",
+        "lontara": "ᨕᨍᨄ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Berjalan"
+    },
+    {
+        "indonesia": "Bersatu",
+        "daerah": "Asse're",
+        "lontara": "ᨕᨔᨙᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bersatu"
+    },
+    {
+        "indonesia": "Bersih",
+        "daerah": "Tangkasa'",
+        "lontara": "ᨈᨀᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bersih"
+    },
+    {
+        "indonesia": "Bersyukur",
+        "daerah": "Sukkuru'",
+        "lontara": "ᨔᨘᨀᨘᨑᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bersyukur"
+    },
+    {
+        "indonesia": "Besar",
+        "daerah": "Lompo",
+        "lontara": "ᨒᨚᨇᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Besar"
+    },
+    {
+        "indonesia": "Besi",
+        "daerah": "Bassi",
+        "lontara": "ᨅᨔᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Besi"
+    },
+    {
+        "indonesia": "Betis",
+        "daerah": "Bitisi'",
+        "lontara": "ᨅᨗᨈᨗᨔᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Betis"
+    },
+    {
+        "indonesia": "Biawak",
+        "daerah": "Paddalle",
+        "lontara": "ᨄᨉᨒᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Biawak"
+    },
+    {
+        "indonesia": "Bibir",
+        "daerah": "Bibere'",
+        "lontara": "ᨅᨗᨅᨙᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bibir"
+    },
+    {
+        "indonesia": "Bikin",
+        "daerah": "Appare'",
+        "lontara": "ᨕᨄᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bikin"
+    },
+    {
+        "indonesia": "Bintang",
+        "daerah": "Bintoeng",
+        "lontara": "ᨅᨗᨈᨚᨕᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bintang"
+    },
+    {
+        "indonesia": "Bisu",
+        "daerah": "Pepe",
+        "lontara": "ᨄᨙᨄᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bisu"
+    },
+    {
+        "indonesia": "Bocor",
+        "daerah": "Boncoro'",
+        "lontara": "ᨅᨚᨏᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bocor"
+    },
+    {
+        "indonesia": "Bodoh",
+        "daerah": "Bebe'",
+        "lontara": "ᨅᨙᨅᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bodoh"
+    },
+    {
+        "indonesia": "Bohong",
+        "daerah": "Balle-balle",
+        "lontara": "ᨅᨒᨙᨅᨒᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bohong"
+    },
+    {
+        "indonesia": "Boneka",
+        "daerah": "Dato'-dato'",
+        "lontara": "ᨉᨈᨚᨉᨈᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Boneka"
+    },
+    {
+        "indonesia": "Bongkar",
+        "daerah": "Bongkara'",
+        "lontara": "ᨅᨚᨀᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bongkar"
+    },
+    {
+        "indonesia": "Botol",
+        "daerah": "Botolo'",
+        "lontara": "ᨅᨚᨈᨚᨒᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Botol"
+    },
+    {
+        "indonesia": "Buah",
+        "daerah": "Rappo",
+        "lontara": "ᨑᨄᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Buah"
+    },
+    {
+        "indonesia": "Buku",
+        "daerah": "Bobbo'",
+        "lontara": "ᨅᨚᨅᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Buku"
+    },
+    {
+        "indonesia": "Bungkuk",
+        "daerah": "Bukku'",
+        "lontara": "ᨅᨘᨀᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Bungkuk"
+    },
+    {
+        "indonesia": "Burung",
+        "daerah": "Jangang-jangang",
+        "lontara": "ᨍᨃᨍᨃ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Burung"
+    },
+    {
+        "indonesia": "Busuk",
+        "daerah": "Botto'",
+        "lontara": "ᨅᨚᨈᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Busuk"
+    },
+    {
+        "indonesia": "Cacing",
+        "daerah": "Gallang-gallang",
+        "lontara": "ᨁᨒᨁᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cacing"
+    },
+    {
+        "indonesia": "Cantik",
+        "daerah": "Gammara'",
+        "lontara": "ᨁᨆᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cantik"
+    },
+    {
+        "indonesia": "Cat",
+        "daerah": "Parada",
+        "lontara": "ᨄᨑᨉ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cat"
+    },
+    {
+        "indonesia": "Cebok / Cuci",
+        "daerah": "Bissa",
+        "lontara": "ᨅᨗᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cebok / Cuci"
+    },
+    {
+        "indonesia": "Celaka",
+        "daerah": "Cilaka",
+        "lontara": "ᨌᨗᨒᨀ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Celaka"
+    },
+    {
+        "indonesia": "Celana",
+        "daerah": "Saluara'",
+        "lontara": "ᨔᨒᨘᨕᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Celana"
+    },
+    {
+        "indonesia": "Cepat",
+        "daerah": "Linta'",
+        "lontara": "ᨒᨗᨈ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cepat"
+    },
+    {
+        "indonesia": "Cermin",
+        "daerah": "Carammeng",
+        "lontara": "ᨌᨑᨆᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cermin"
+    },
+    {
+        "indonesia": "Cincin",
+        "daerah": "Cincing",
+        "lontara": "ᨌᨗᨏᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cincin"
+    },
+    {
+        "indonesia": "Cium",
+        "daerah": "Cippo'",
+        "lontara": "ᨌᨗᨄᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cium"
+    },
+    {
+        "indonesia": "Colek",
+        "daerah": "Ko'bi'",
+        "lontara": "ᨀᨚᨅᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Colek"
+    },
+    {
+        "indonesia": "Cukur",
+        "daerah": "Cukku'",
+        "lontara": "ᨌᨘᨀᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Cukur"
+    },
+    {
+        "indonesia": "Dada",
+        "daerah": "Barambang",
+        "lontara": "ᨅᨑᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dada"
+    },
+    {
+        "indonesia": "Dalam",
+        "daerah": "Lalang",
+        "lontara": "ᨒᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dalam"
+    },
+    {
+        "indonesia": "Dangkal",
+        "daerah": "Ambawa",
+        "lontara": "ᨕᨅᨓ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dangkal"
+    },
+    {
+        "indonesia": "Darah",
+        "daerah": "Cera'",
+        "lontara": "ᨌᨙᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Darah"
+    },
+    {
+        "indonesia": "Dari",
+        "daerah": "Battu",
+        "lontara": "ᨅᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dari"
+    },
+    {
+        "indonesia": "Dekat",
+        "daerah": "Ambani",
+        "lontara": "ᨕᨅᨊᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dekat"
+    },
+    {
+        "indonesia": "Dewasa",
+        "daerah": "Ballere'",
+        "lontara": "ᨅᨒᨙᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dewasa"
+    },
+    {
+        "indonesia": "Dinding",
+        "daerah": "Rinring",
+        "lontara": "ᨑᨗᨋᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dinding"
+    },
+    {
+        "indonesia": "Dingin",
+        "daerah": "Dinging",
+        "lontara": "ᨉᨗᨃᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dingin"
+    },
+    {
+        "indonesia": "Dokter",
+        "daerah": "Dottoro'",
+        "lontara": "ᨉᨚᨈᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dokter"
+    },
+    {
+        "indonesia": "Dua",
+        "daerah": "Rua",
+        "lontara": "ᨑᨘᨕ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Dua"
+    },
+    {
+        "indonesia": "Duduk",
+        "daerah": "Mempo",
+        "lontara": "ᨆᨙᨇᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Duduk"
+    },
+    {
+        "indonesia": "Duri",
+        "daerah": "Katinting",
+        "lontara": "ᨀᨈᨗᨈᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Duri"
+    },
+    {
+        "indonesia": "Ekor",
+        "daerah": "Ingkong",
+        "lontara": "ᨕᨗᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ekor"
+    },
+    {
+        "indonesia": "Emas",
+        "daerah": "Bulaeng",
+        "lontara": "ᨅᨘᨒᨕᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Emas"
+    },
+    {
+        "indonesia": "Empat",
+        "daerah": "Appa'",
+        "lontara": "ᨕᨄ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Empat"
+    },
+    {
+        "indonesia": "Enak",
+        "daerah": "Assipa'",
+        "lontara": "ᨕᨔᨗᨄ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Enak"
+    },
+    {
+        "indonesia": "Enam",
+        "daerah": "Annang",
+        "lontara": "ᨕᨊ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Enam"
+    },
+    {
+        "indonesia": "Februari",
+        "daerah": "Paberewari",
+        "lontara": "ᨄᨅᨙᨑᨙᨓᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Februari"
+    },
+    {
+        "indonesia": "Gantung",
+        "daerah": "Gentung",
+        "lontara": "ᨁᨙᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gantung"
+    },
+    {
+        "indonesia": "Garam / Asin",
+        "daerah": "Ce'la",
+        "lontara": "ᨌᨙᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Garam / Asin"
+    },
+    {
+        "indonesia": "Gelap",
+        "daerah": "Sassang",
+        "lontara": "ᨔᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gelap"
+    },
+    {
+        "indonesia": "Gelas",
+        "daerah": "Kaca",
+        "lontara": "ᨀᨌ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gelas"
+    },
+    {
+        "indonesia": "Gemetar",
+        "daerah": "Annenreng",
+        "lontara": "ᨕᨊᨙᨋᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gemetar"
+    },
+    {
+        "indonesia": "Gemuk",
+        "daerah": "Co'mo'",
+        "lontara": "ᨌᨚᨆᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gemuk"
+    },
+    {
+        "indonesia": "Genap",
+        "daerah": "Ganna'",
+        "lontara": "ᨁᨊ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Genap"
+    },
+    {
+        "indonesia": "Gergaji",
+        "daerah": "Garagaji",
+        "lontara": "ᨁᨑᨁᨍᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gergaji"
+    },
+    {
+        "indonesia": "Gigit",
+        "daerah": "Kokko'",
+        "lontara": "ᨀᨚᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gigit"
+    },
+    {
+        "indonesia": "Gila",
+        "daerah": "Pongoro'",
+        "lontara": "ᨄᨚᨃᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gila"
+    },
+    {
+        "indonesia": "Gosok",
+        "daerah": "Kalusu'",
+        "lontara": "ᨀᨒᨘᨔᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gosok"
+    },
+    {
+        "indonesia": "Gua",
+        "daerah": "Goa",
+        "lontara": "ᨁᨚᨕ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gua"
+    },
+    {
+        "indonesia": "Gula",
+        "daerah": "Golla",
+        "lontara": "ᨁᨚᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gula"
+    },
+    {
+        "indonesia": "Gunung",
+        "daerah": "Bulu'",
+        "lontara": "ᨅᨘᨒᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gunung"
+    },
+    {
+        "indonesia": "Gunting",
+        "daerah": "Goncing",
+        "lontara": "ᨁᨚᨏᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Gunting"
+    },
+    {
+        "indonesia": "Habis",
+        "daerah": "La'busu'",
+        "lontara": "ᨒᨅᨘᨔᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Habis"
+    },
+    {
+        "indonesia": "Halus",
+        "daerah": "Alusu'",
+        "lontara": "ᨕᨒᨘᨔᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Halus"
+    },
+    {
+        "indonesia": "Hari",
+        "daerah": "Allo",
+        "lontara": "ᨕᨒᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Hari"
+    },
+    {
+        "indonesia": "Harum",
+        "daerah": "Bau'",
+        "lontara": "ᨅᨕᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Harum"
+    },
+    {
+        "indonesia": "Hati",
+        "daerah": "Ati",
+        "lontara": "ᨕᨈᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Hati"
+    },
+    {
+        "indonesia": "Hati-hati",
+        "daerah": "Tutu",
+        "lontara": "ᨈᨘᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Hati-hati"
+    },
+    {
+        "indonesia": "Haus",
+        "daerah": "Lausu'",
+        "lontara": "ᨒᨕᨘᨔᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Haus"
+    },
+    {
+        "indonesia": "Hidung",
+        "daerah": "Ka'muru",
+        "lontara": "ᨀᨆᨘᨑᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Hidung"
+    },
+    {
+        "indonesia": "Hisap",
+        "daerah": "Iso'",
+        "lontara": "ᨕᨗᨔᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Hisap"
+    },
+    {
+        "indonesia": "Ibu",
+        "daerah": "Amma'",
+        "lontara": "ᨕᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ibu"
+    },
+    {
+        "indonesia": "Ikat",
+        "daerah": "Sikko'",
+        "lontara": "ᨔᨗᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ikat"
+    },
+    {
+        "indonesia": "Ikan",
+        "daerah": "Juku'",
+        "lontara": "ᨍᨘᨀᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ikan"
+    },
+    {
+        "indonesia": "Ingat",
+        "daerah": "Inga'",
+        "lontara": "ᨕᨗᨃ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ingat"
+    },
+    {
+        "indonesia": "Ini",
+        "daerah": "Anne",
+        "lontara": "ᨕᨊᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ini"
+    },
+    {
+        "indonesia": "Isi",
+        "daerah": "Assi",
+        "lontara": "ᨕᨔᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Isi"
+    },
+    {
+        "indonesia": "Itu",
+        "daerah": "Antu",
+        "lontara": "ᨕᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Itu"
+    },
+    {
+        "indonesia": "Iya",
+        "daerah": "Iye'",
+        "lontara": "ᨕᨗᨐᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Iya"
+    },
+    {
+        "indonesia": "Jadi",
+        "daerah": "Anjari",
+        "lontara": "ᨕᨍᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jadi"
+    },
+    {
+        "indonesia": "Jalan",
+        "daerah": "Jappa",
+        "lontara": "ᨍᨄ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jalan"
+    },
+    {
+        "indonesia": "Jangkrik",
+        "daerah": "Jingkiri'",
+        "lontara": "ᨍᨗᨀᨗᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jangkrik"
+    },
+    {
+        "indonesia": "Januari",
+        "daerah": "Janijari",
+        "lontara": "ᨍᨊᨗᨍᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Januari"
+    },
+    {
+        "indonesia": "Jauh",
+        "daerah": "Bella",
+        "lontara": "ᨅᨙᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jauh"
+    },
+    {
+        "indonesia": "Jenggot",
+        "daerah": "Janggo'",
+        "lontara": "ᨍᨁᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jenggot"
+    },
+    {
+        "indonesia": "Jera",
+        "daerah": "Jarra",
+        "lontara": "ᨍᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jera"
+    },
+    {
+        "indonesia": "Jeruk",
+        "daerah": "Lemo",
+        "lontara": "ᨒᨙᨆᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jeruk"
+    },
+    {
+        "indonesia": "Jual",
+        "daerah": "Balu'",
+        "lontara": "ᨅᨒᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jual"
+    },
+    {
+        "indonesia": "Judi",
+        "daerah": "Botoro'",
+        "lontara": "ᨅᨚᨈᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Judi"
+    },
+    {
+        "indonesia": "Juli",
+        "daerah": "Juli",
+        "lontara": "ᨍᨘᨒᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Juli"
+    },
+    {
+        "indonesia": "Jum'at",
+        "daerah": "Juma'",
+        "lontara": "ᨍᨘᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Jum'at"
+    },
+    {
+        "indonesia": "Juni",
+        "daerah": "Juni",
+        "lontara": "ᨍᨘᨊᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Juni"
+    },
+    {
+        "indonesia": "Kabar",
+        "daerah": "Kareba",
+        "lontara": "ᨀᨑᨙᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kabar"
+    },
+    {
+        "indonesia": "Kaki",
+        "daerah": "Bangkeng",
+        "lontara": "ᨅᨀᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kaki"
+    },
+    {
+        "indonesia": "Kambing",
+        "daerah": "Bembe",
+        "lontara": "ᨅᨙᨅᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kambing"
+    },
+    {
+        "indonesia": "Kamis",
+        "daerah": "Kammisi'",
+        "lontara": "ᨀᨆᨗᨔᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kamis"
+    },
+    {
+        "indonesia": "Kangkung",
+        "daerah": "Ngkong",
+        "lontara": "ᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kangkung"
+    },
+    {
+        "indonesia": "Kasar",
+        "daerah": "Kasara'",
+        "lontara": "ᨀᨔᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kasar"
+    },
+    {
+        "indonesia": "Kasihan",
+        "daerah": "Kodong",
+        "lontara": "ᨀᨚᨉᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kasihan"
+    },
+    {
+        "indonesia": "Kasur",
+        "daerah": "Kasoro'",
+        "lontara": "ᨀᨔᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kasur"
+    },
+    {
+        "indonesia": "Kebal",
+        "daerah": "Ka'bala'",
+        "lontara": "ᨀᨅᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kebal"
+    },
+    {
+        "indonesia": "Kecoak",
+        "daerah": "Bulepese'",
+        "lontara": "ᨅᨘᨒᨙᨄᨙᨔᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kecoak"
+    },
+    {
+        "indonesia": "Kecil",
+        "daerah": "Ca'di",
+        "lontara": "ᨌᨉᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kecil"
+    },
+    {
+        "indonesia": "Kedondong",
+        "daerah": "Kadondong",
+        "lontara": "ᨀᨉᨚᨉᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kedondong"
+    },
+    {
+        "indonesia": "Kelapa",
+        "daerah": "Kaluku",
+        "lontara": "ᨀᨒᨘᨀᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kelapa"
+    },
+    {
+        "indonesia": "Kelor",
+        "daerah": "Keloro'",
+        "lontara": "ᨀᨙᨒᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kelor"
+    },
+    {
+        "indonesia": "Kenyang",
+        "daerah": "Bassoro'",
+        "lontara": "ᨅᨔᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kenyang"
+    },
+    {
+        "indonesia": "Kepiting",
+        "daerah": "Sikuju",
+        "lontara": "ᨔᨗᨀᨘᨍᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kepiting"
+    },
+    {
+        "indonesia": "Kerbau",
+        "daerah": "Tedong",
+        "lontara": "ᨈᨙᨉᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kerbau"
+    },
+    {
+        "indonesia": "Kertas",
+        "daerah": "Karattasa'",
+        "lontara": "ᨀᨑᨈᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kertas"
+    },
+    {
+        "indonesia": "Kuku",
+        "daerah": "Kanuku",
+        "lontara": "ᨀᨊᨘᨀᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kuku"
+    },
+    {
+        "indonesia": "Kumis",
+        "daerah": "Bulusumi'",
+        "lontara": "ᨅᨘᨒᨘᨔᨘᨆᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kumis"
+    },
+    {
+        "indonesia": "Kurus",
+        "daerah": "Roso'",
+        "lontara": "ᨑᨚᨔᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Kurus"
+    },
+    {
+        "indonesia": "Laki-laki",
+        "daerah": "Bura'ne",
+        "lontara": "ᨅᨘᨑᨊᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Laki-laki"
+    },
+    {
+        "indonesia": "Lapar",
+        "daerah": "Cipuru'",
+        "lontara": "ᨌᨗᨄᨘᨑᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lapar"
+    },
+    {
+        "indonesia": "Layar",
+        "daerah": "Sombala'",
+        "lontara": "ᨔᨚᨅᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Layar"
+    },
+    {
+        "indonesia": "Lebar",
+        "daerah": "L'ba'",
+        "lontara": "ᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lebar"
+    },
+    {
+        "indonesia": "Lemari",
+        "daerah": "Lamari",
+        "lontara": "ᨒᨆᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lemari"
+    },
+    {
+        "indonesia": "Lidah",
+        "daerah": "Lila",
+        "lontara": "ᨒᨗᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lidah"
+    },
+    {
+        "indonesia": "Lihat",
+        "daerah": "Cini'",
+        "lontara": "ᨌᨗᨊᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lihat"
+    },
+    {
+        "indonesia": "Lipan",
+        "daerah": "Balipang",
+        "lontara": "ᨅᨒᨗᨄ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lipan"
+    },
+    {
+        "indonesia": "Lurus",
+        "daerah": "Lambusu'",
+        "lontara": "ᨒᨅᨘᨔᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lurus"
+    },
+    {
+        "indonesia": "Lutut",
+        "daerah": "Kolantu'",
+        "lontara": "ᨀᨚᨒᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Lutut"
+    },
+    {
+        "indonesia": "Magrib",
+        "daerah": "Mangngaribi",
+        "lontara": "ᨆᨃᨑᨗᨅᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Magrib"
+    },
+    {
+        "indonesia": "Malam",
+        "daerah": "Bngngi",
+        "lontara": "ᨃᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Malam"
+    },
+    {
+        "indonesia": "Malas",
+        "daerah": "Kuttu",
+        "lontara": "ᨀᨘᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Malas"
+    },
+    {
+        "indonesia": "Manusia / Orang",
+        "daerah": "Tau",
+        "lontara": "ᨈᨕᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Manusia / Orang"
+    },
+    {
+        "indonesia": "Marah",
+        "daerah": "Larro",
+        "lontara": "ᨒᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Marah"
+    },
+    {
+        "indonesia": "Masak",
+        "daerah": "Pallu",
+        "lontara": "ᨄᨒᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Masak"
+    },
+    {
+        "indonesia": "Mati",
+        "daerah": "Mate",
+        "lontara": "ᨆᨈᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Mati"
+    },
+    {
+        "indonesia": "Mei",
+        "daerah": "Mai'",
+        "lontara": "ᨆᨕᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Mei"
+    },
+    {
+        "indonesia": "Menangis",
+        "daerah": "Angngarru'",
+        "lontara": "ᨕᨃᨑᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Menangis"
+    },
+    {
+        "indonesia": "Minum",
+        "daerah": "Inung",
+        "lontara": "ᨕᨗᨊᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Minum"
+    },
+    {
+        "indonesia": "Murah",
+        "daerah": "Lammoro'",
+        "lontara": "ᨒᨆᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Murah"
+    },
+    {
+        "indonesia": "Nama",
+        "daerah": "Areng",
+        "lontara": "ᨕᨑᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Nama"
+    },
+    {
+        "indonesia": "Nyamuk",
+        "daerah": "Lamu'",
+        "lontara": "ᨒᨆᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Nyamuk"
+    },
+    {
+        "indonesia": "Paman",
+        "daerah": "Purina",
+        "lontara": "ᨄᨘᨑᨗᨊ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Paman"
+    },
+    {
+        "indonesia": "Panci",
+        "daerah": "Uring",
+        "lontara": "ᨕᨘᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Panci"
+    },
+    {
+        "indonesia": "Panjang",
+        "daerah": "La'bu",
+        "lontara": "ᨒᨅᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Panjang"
+    },
+    {
+        "indonesia": "Panas",
+        "daerah": "Bambang",
+        "lontara": "ᨅᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Panas"
+    },
+    {
+        "indonesia": "Pasir",
+        "daerah": "Kassi'",
+        "lontara": "ᨀᨔᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pasir"
+    },
+    {
+        "indonesia": "Pegang",
+        "daerah": "Karawa",
+        "lontara": "ᨀᨑᨓ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pegang"
+    },
+    {
+        "indonesia": "Pembeli",
+        "daerah": "Pammalli",
+        "lontara": "ᨄᨆᨒᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pembeli"
+    },
+    {
+        "indonesia": "Pembohong",
+        "daerah": "Paballe-balle",
+        "lontara": "ᨄᨅᨒᨙᨅᨒᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pembohong"
+    },
+    {
+        "indonesia": "Pencuri",
+        "daerah": "Palukka'",
+        "lontara": "ᨄᨒᨘᨀ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pencuri"
+    },
+    {
+        "indonesia": "Pendek",
+        "daerah": "Bodo",
+        "lontara": "ᨅᨚᨉᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pendek"
+    },
+    {
+        "indonesia": "Perempuan",
+        "daerah": "Baine",
+        "lontara": "ᨅᨕᨗᨊᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Perempuan"
+    },
+    {
+        "indonesia": "Pergi",
+        "daerah": "Lampa",
+        "lontara": "ᨒᨇ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pergi"
+    },
+    {
+        "indonesia": "Perut",
+        "daerah": "Battang",
+        "lontara": "ᨅᨈ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Perut"
+    },
+    {
+        "indonesia": "Pikir",
+        "daerah": "Pikkiri'",
+        "lontara": "ᨄᨗᨀᨗᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pikir"
+    },
+    {
+        "indonesia": "Pintu",
+        "daerah": "Pakke'bu'",
+        "lontara": "ᨄᨀᨙᨅᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pintu"
+    },
+    {
+        "indonesia": "Piring",
+        "daerah": "Panne",
+        "lontara": "ᨄᨊᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Piring"
+    },
+    {
+        "indonesia": "Pisang",
+        "daerah": "Unti",
+        "lontara": "ᨕᨘᨈᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pisang"
+    },
+    {
+        "indonesia": "Pisau",
+        "daerah": "Lading",
+        "lontara": "ᨒᨉᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pisau"
+    },
+    {
+        "indonesia": "Pukul",
+        "daerah": "Peppe'",
+        "lontara": "ᨄᨙᨄᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Pukul"
+    },
+    {
+        "indonesia": "Punggung",
+        "daerah": "Dongko'",
+        "lontara": "ᨉᨚᨀᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Punggung"
+    },
+    {
+        "indonesia": "Rabu",
+        "daerah": "Araba'",
+        "lontara": "ᨕᨑᨅ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Rabu"
+    },
+    {
+        "indonesia": "Rambut",
+        "daerah": "U'",
+        "lontara": "ᨕᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Rambut"
+    },
+    {
+        "indonesia": "Rumah",
+        "daerah": "Balla'",
+        "lontara": "ᨅᨒ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Rumah"
+    },
+    {
+        "indonesia": "Sabtu",
+        "daerah": "Sattu",
+        "lontara": "ᨔᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Sabtu"
+    },
+    {
+        "indonesia": "Sakit",
+        "daerah": "Garring",
+        "lontara": "ᨁᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Sakit"
+    },
+    {
+        "indonesia": "Selasa",
+        "daerah": "Salasa",
+        "lontara": "ᨔᨒᨔ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Selasa"
+    },
+    {
+        "indonesia": "Selokan",
+        "daerah": "Solongang",
+        "lontara": "ᨔᨚᨒᨚᨃ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Selokan"
+    },
+    {
+        "indonesia": "Senin",
+        "daerah": "Sanneng",
+        "lontara": "ᨔᨊᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Senin"
+    },
+    {
+        "indonesia": "Sepatu",
+        "daerah": "Sapatu",
+        "lontara": "ᨔᨄᨈᨘ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Sepatu"
+    },
+    {
+        "indonesia": "Sepuluh",
+        "daerah": "Sampulo",
+        "lontara": "ᨔᨇᨘᨒᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Sepuluh"
+    },
+    {
+        "indonesia": "Sombong",
+        "daerah": "Borro",
+        "lontara": "ᨅᨚᨑᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Sombong"
+    },
+    {
+        "indonesia": "Sungai",
+        "daerah": "Binanga",
+        "lontara": "ᨅᨗᨊᨃ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Sungai"
+    },
+    {
+        "indonesia": "Tanah",
+        "daerah": "Butta",
+        "lontara": "ᨅᨘᨈ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Tanah"
+    },
+    {
+        "indonesia": "Tangan",
+        "daerah": "Lima",
+        "lontara": "ᨒᨗᨆ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Tangan"
+    },
+    {
+        "indonesia": "Telur",
+        "daerah": "Bayao",
+        "lontara": "ᨅᨐᨕᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Telur"
+    },
+    {
+        "indonesia": "Tidur",
+        "daerah": "Tinro",
+        "lontara": "ᨈᨗᨋᨚ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Tidur"
+    },
+    {
+        "indonesia": "Tulis",
+        "daerah": "Ukiri'",
+        "lontara": "ᨕᨘᨀᨗᨑᨗ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Tulis"
+    },
+    {
+        "indonesia": "Uang",
+        "daerah": "Doe'",
+        "lontara": "ᨉᨚᨕᨙ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Uang"
+    },
+    {
+        "indonesia": "Ular",
+        "daerah": "Ulara'",
+        "lontara": "ᨕᨘᨒᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Ular"
+    },
+    {
+        "indonesia": "Utara",
+        "daerah": "Wara'",
+        "lontara": "ᨓᨑ",
+        "kelas": "Umum",
+        "description": "Terjemahan: Utara"
+    }
+]

@@ -1,0 +1,63 @@
+:root {
+    /* StudyAI Palette */
+    --primary-color: #000000;
+    /* Black for active states/buttons */
+    --secondary-color: #666666;
+    /* Grey for inactive icons/text */
+
+    --accent-color: #000000;
+    /* Black accent */
+    --accent-blue: #e8f0fe;
+    /* Light blue for hero card */
+    --accent-purple: #f3e8ff;
+    /* Light purple for decoration */
+    --accent-green: #e6f4ea;
+    /* Light green for decoration */
+    --accent-orange: #fce8e6;
+    /* Light orange for decoration */
+
+    --bg-body: #f3f6fc;
+    /* Very light blue-grey background */
+    --bg-card: #ffffff;
+    --bg-sidebar: #ffffff;
+
+    --text-main: #1a1a1a;
+    --text-muted: #5f6368;
+    --text-light: #ffffff;
+    /* For active pill text */
+
+    --border-color: #e0e0e0;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    /* Spacing */
+    --sidebar-width: 260px;
+    --header-height: 80px;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+
+    /* Radius */
+    --radius-md: 12px;
+    --radius-lg: 16px;
+
+    /* Transitions */
+    --trans-speed: 0.2s;
+}
+
+/* Dark Mode Tokens */
+[data-theme="dark"] {
+    --primary-color: #ffffff;
+    --secondary-color: #a0a0a0;
+
+    --bg-body: #121212;
+    --bg-card: #1e1e1e;
+    --bg-sidebar: #181818;
+
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --text-light: #000000;
+
+    --border-color: #333;
+    --accent-blue: #1e2a3b;
+}
