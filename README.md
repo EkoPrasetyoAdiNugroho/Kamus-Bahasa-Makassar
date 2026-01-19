@@ -24,8 +24,8 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi di komputer Anda:
 
 1.  **Clone Repository**
     ```bash
-    git clone https://github.com/username/balla-bahasa.git
-    cd balla-bahasa
+    git clone [https://github.com/EkoPrasetyoAdiNugroho/Kamus-Bahasa-Makassar.git]
+    cd Kamus Bhs daerah
     ```
 
 2.  **Install Dependencies**
