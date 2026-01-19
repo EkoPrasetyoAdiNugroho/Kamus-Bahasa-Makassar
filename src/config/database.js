@@ -1,34 +1,56 @@
-const mongoose = require('mongoose');
+const { Pool } = require('pg');
 
-let isConnected = false;
+let pool = null;
 
-const connectDB = async () => {
-    if (isConnected) {
-        console.log('Using existing MongoDB connection');
-        return;
+const getPool = () => {
+    if (pool) {
+        return pool;
     }
 
-    try {
-        const mongoUri = process.env.MONGODB_URI_APP;
+    const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL;
 
-        if (!mongoUri) {
-            console.warn('MONGODB_URI_APP not found, falling back to local JSON');
+    if (!connectionString) {
+        console.warn('No PostgreSQL connection string found, using local JSON fallback');
+        return null;
+    }
+
+    pool = new Pool({
+        connectionString,
+        ssl: {
+            rejectUnauthorized: false
+        },
+        max: 10, // Maximum number of clients in the pool
+        idleTimeoutMillis: 30000,
+        connectionTimeoutMillis: 2000,
+    });
+
+    pool.on('error', (err) => {
+        console.error('Unexpected error on idle PostgreSQL client', err);
+    });
+
+    return pool;
+};
+
+const connectDB = async () => {
+    try {
+        const pool = getPool();
+
+        if (!pool) {
+            console.warn('PostgreSQL pool not initialized, falling back to local JSON');
             return null;
         }
 
-        const conn = await mongoose.connect(mongoUri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        // Test connection
+        const client = await pool.connect();
+        console.log(`PostgreSQL Connected: ${client.connectionParameters.host}`);
+        client.release();
 
-        isConnected = conn.connections[0].readyState === 1;
-        console.log(`MongoDB Connected: ${conn.connection.host}`);
-        return conn;
+        return pool;
     } catch (error) {
-        console.error('MongoDB connection error:', error.message);
+        console.error('PostgreSQL connection error:', error.message);
         console.warn('Falling back to local JSON data');
         return null;
     }
 };
 
-module.exports = connectDB;
+module.exports = { connectDB, getPool };

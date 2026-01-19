@@ -1,17 +1,24 @@
-const Dictionary = require('../models/Dictionary');
+const { getPool } = require('../config/database');
 const localDictionary = require('../../data/dictionary.json');
+const queries = require('../models/queries');
 
-// Helper to get dictionary data (MongoDB or JSON fallback)
+// Helper to get dictionary data (PostgreSQL or JSON fallback)
 async function getDictionaryData() {
+    const pool = getPool();
+
+    if (!pool) {
+        console.log(`Loaded ${localDictionary.length} words from local JSON`);
+        return localDictionary;
+    }
+
     try {
-        // Try MongoDB first
-        const data = await Dictionary.find({}).lean();
-        if (data && data.length > 0) {
-            console.log(`Loaded ${data.length} words from MongoDB`);
-            return data;
+        const result = await pool.query(queries.SQL_GET_ALL);
+        if (result.rows && result.rows.length > 0) {
+            console.log(`Loaded ${result.rows.length} words from PostgreSQL`);
+            return result.rows;
         }
     } catch (error) {
-        console.log('MongoDB query failed, using local JSON');
+        console.log('PostgreSQL query failed, using local JSON:', error.message);
     }
 
     // Fallback to local JSON
@@ -42,7 +49,7 @@ exports.search = async (req, res) => {
 
     const startTime = performance.now();
 
-    // Get dictionary from MongoDB or JSON
+    // Get dictionary from PostgreSQL or JSON
     const dictionary = await getDictionaryData();
 
     dictionary.forEach(entry => {
