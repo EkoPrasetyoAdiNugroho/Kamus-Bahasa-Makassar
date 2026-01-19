@@ -1,18 +1,11 @@
-const { getPool } = require('../config/database');
+const { executeQuery } = require('../config/database');
 const localDictionary = require('../../data/dictionary.json');
 const queries = require('../models/queries');
 
 // Helper to get dictionary data (PostgreSQL or JSON fallback)
 async function getDictionaryData() {
-    const pool = getPool();
-
-    if (!pool) {
-        console.log(`Loaded ${localDictionary.length} words from local JSON`);
-        return localDictionary;
-    }
-
     try {
-        const result = await pool.query(queries.SQL_GET_ALL);
+        const result = await executeQuery(queries.SQL_GET_ALL);
         if (result.rows && result.rows.length > 0) {
             console.log(`Loaded ${result.rows.length} words from PostgreSQL`);
             return result.rows;

@@ -1,51 +1,36 @@
-const { Pool } = require('pg');
+const { Client } = require('pg');
 
-let pool = null;
-
-const getPool = () => {
-    if (pool) {
-        return pool;
-    }
-
+// Create a new client for each query (serverless-friendly)
+const createClient = () => {
     const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL;
 
     if (!connectionString) {
-        console.warn('No PostgreSQL connection string found, using local JSON fallback');
+        console.warn('No PostgreSQL connection string found');
         return null;
     }
 
-    pool = new Pool({
+    return new Client({
         connectionString,
         ssl: {
             rejectUnauthorized: false
-        },
-        max: 10, // Maximum number of clients in the pool
-        idleTimeoutMillis: 30000,
-        connectionTimeoutMillis: 2000,
+        }
     });
-
-    pool.on('error', (err) => {
-        console.error('Unexpected error on idle PostgreSQL client', err);
-    });
-
-    return pool;
 };
 
 const connectDB = async () => {
     try {
-        const pool = getPool();
+        const client = createClient();
 
-        if (!pool) {
-            console.warn('PostgreSQL pool not initialized, falling back to local JSON');
+        if (!client) {
+            console.warn('PostgreSQL client not initialized, falling back to local JSON');
             return null;
         }
 
-        // Test connection
-        const client = await pool.connect();
-        console.log(`PostgreSQL Connected: ${client.connectionParameters.host}`);
-        client.release();
+        await client.connect();
+        console.log(`PostgreSQL Connected: ${client.host}`);
+        await client.end();
 
-        return pool;
+        return true;
     } catch (error) {
         console.error('PostgreSQL connection error:', error.message);
         console.warn('Falling back to local JSON data');
@@ -53,4 +38,21 @@ const connectDB = async () => {
     }
 };
 
-module.exports = { connectDB, getPool };
+// Execute query with automatic client management
+const executeQuery = async (queryText, params = []) => {
+    const client = createClient();
+
+    if (!client) {
+        throw new Error('No database client available');
+    }
+
+    try {
+        await client.connect();
+        const result = await client.query(queryText, params);
+        return result;
+    } finally {
+        await client.end();
+    }
+};
+
+module.exports = { connectDB, executeQuery };
