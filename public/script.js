@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Dashboard & Stats Logic ---
     async function fetchStats() {
         try {
-            const response = await fetch('http://localhost:3000/api/stats');
+            const response = await fetch('/api/stats');
             if (response.ok) {
                 const data = await response.json();
 
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Search Logic (Migrated) ---
     function setupSearch() {
-        const API_URL = 'http://localhost:3000/api/search';
+        const API_URL = '/api/search';
 
         searchForm.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let dictionaryData = [];
     async function fetchDictionary() {
         try {
-            const response = await fetch('http://localhost:3000/api/data'); // Hypothethical
+            const response = await fetch('/api/data');
             if (response.ok) {
                 dictionaryData = await response.json();
                 console.log(`Loaded ${dictionaryData.length} words from API`);
