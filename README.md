@@ -24,7 +24,7 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi di komputer Anda:
 
 1.  **Clone Repository**
     ```bash
-    git clone [https://github.com/EkoPrasetyoAdiNugroho/Kamus-Bahasa-Makassar.git]
+    git clone https://github.com/EkoPrasetyoAdiNugroho/Kamus-Bahasa-Makassar.git
     cd Kamus Bhs daerah
     ```
 
