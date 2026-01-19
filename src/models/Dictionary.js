@@ -20,7 +20,7 @@ const DictionarySchema = new mongoose.Schema({
         default: 'Umum'
     }
 }, {
-    collection: 'words',
+    collection: 'dictionary',
     timestamps: false
 });
 
