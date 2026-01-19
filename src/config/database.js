@@ -9,10 +9,10 @@ const connectDB = async () => {
     }
 
     try {
-        const mongoUri = process.env.MONGODB_URI;
+        const mongoUri = process.env.MONGODB_URI_APP;
 
         if (!mongoUri) {
-            console.warn('MONGODB_URI not found, falling back to local JSON');
+            console.warn('MONGODB_URI_APP not found, falling back to local JSON');
             return null;
         }
 

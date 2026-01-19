@@ -13,7 +13,7 @@ const localData = require('../data/dictionary.json');
 async function migrate() {
     try {
         console.log('Connecting to MongoDB...');
-        await mongoose.connect(process.env.MONGODB_URI, {
+        await mongoose.connect(process.env.MONGODB_URI_APP, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
