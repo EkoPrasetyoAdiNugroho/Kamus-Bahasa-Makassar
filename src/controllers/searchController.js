@@ -1,6 +1,25 @@
-const dictionary = require('../../data/dictionary.json');
+const Dictionary = require('../models/Dictionary');
+const localDictionary = require('../../data/dictionary.json');
 
-exports.search = (req, res) => {
+// Helper to get dictionary data (MongoDB or JSON fallback)
+async function getDictionaryData() {
+    try {
+        // Try MongoDB first
+        const data = await Dictionary.find({}).lean();
+        if (data && data.length > 0) {
+            console.log(`Loaded ${data.length} words from MongoDB`);
+            return data;
+        }
+    } catch (error) {
+        console.log('MongoDB query failed, using local JSON');
+    }
+
+    // Fallback to local JSON
+    console.log(`Loaded ${localDictionary.length} words from local JSON`);
+    return localDictionary;
+}
+
+exports.search = async (req, res) => {
     const { q, algo, dir } = req.query;
 
     if (!q) {
@@ -22,6 +41,9 @@ exports.search = (req, res) => {
     const detailedResults = [];
 
     const startTime = performance.now();
+
+    // Get dictionary from MongoDB or JSON
+    const dictionary = await getDictionaryData();
 
     dictionary.forEach(entry => {
         let resultIndonesia = { matches: [], comparisons: 0 };
@@ -72,11 +94,13 @@ exports.search = (req, res) => {
     });
 };
 
-exports.getAllData = (req, res) => {
+exports.getAllData = async (req, res) => {
+    const dictionary = await getDictionaryData();
     res.json(dictionary);
 };
 
-exports.getStats = (req, res) => {
+exports.getStats = async (req, res) => {
+    const dictionary = await getDictionaryData();
     res.json({
         total_words: dictionary.length
     });
