@@ -1,14 +1,22 @@
-const { executeQuery } = require('../config/database');
+const { getClient } = require('../config/database');
 const localDictionary = require('../../data/dictionary.json');
-const queries = require('../models/queries');
 
 // Helper to get dictionary data (PostgreSQL or JSON fallback)
 async function getDictionaryData() {
+    const sql = getClient();
+
+    if (!sql) {
+        console.log(`Loaded ${localDictionary.length} words from local JSON`);
+        return localDictionary;
+    }
+
     try {
-        const result = await executeQuery(queries.SQL_GET_ALL);
-        if (result.rows && result.rows.length > 0) {
-            console.log(`Loaded ${result.rows.length} words from PostgreSQL`);
-            return result.rows;
+        // Use Neon's tagged template syntax
+        const result = await sql`SELECT id, indonesia, daerah, lontara, kelas FROM dictionary ORDER BY indonesia`;
+
+        if (result && result.length > 0) {
+            console.log(`Loaded ${result.length} words from PostgreSQL`);
+            return result;
         }
     } catch (error) {
         console.log('PostgreSQL query failed, using local JSON:', error.message);
