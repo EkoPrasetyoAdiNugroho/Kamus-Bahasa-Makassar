@@ -18,26 +18,33 @@ exports.search = (req, res) => {
         searchFunction = naiveSearch; // Default
     }
 
+    let totalComparisons = 0;
+    const detailedResults = [];
+
     const startTime = performance.now();
 
-    const results = dictionary.filter(entry => {
-        // Search in both indonesia and daerah fields
-        const matchIndonesia = searchFunction(entry.indonesia.toLowerCase(), q.toLowerCase());
-        const matchDaerah = searchFunction(entry.daerah.toLowerCase(), q.toLowerCase());
-        return matchIndonesia || matchDaerah;
+    dictionary.forEach(entry => {
+        // Search in both fields
+        const resultIndonesia = searchFunction(entry.indonesia.toLowerCase(), q.toLowerCase());
+        const resultDaerah = searchFunction(entry.daerah.toLowerCase(), q.toLowerCase());
+
+        // Aggregate comparisons (metrics)
+        totalComparisons += (resultIndonesia.comparisons + resultDaerah.comparisons);
+
+        // Check if match found
+        if (resultIndonesia.matches.length > 0 || resultDaerah.matches.length > 0) {
+            detailedResults.push({
+                entry: entry,
+                matches: {
+                    indonesia: resultIndonesia.matches,
+                    daerah: resultDaerah.matches
+                }
+            });
+        }
     });
 
     const endTime = performance.now();
     const timeTaken = (endTime - startTime).toFixed(4);
-
-    // Create detailed results with match information
-    const detailedResults = results.map(entry => {
-        const matches = {
-            indonesia: searchFunction(entry.indonesia.toLowerCase(), q.toLowerCase()) ? [0] : [],
-            daerah: searchFunction(entry.daerah.toLowerCase(), q.toLowerCase()) ? [0] : []
-        };
-        return { entry, matches };
-    });
 
     res.json({
         success: true,
@@ -46,7 +53,7 @@ exports.search = (req, res) => {
             algorithm: algo === 'kmp' ? 'kmp' : 'naive',
             performance: {
                 execution_time_ms: timeTaken,
-                total_comparisons: results.length
+                total_comparisons: totalComparisons
             }
         },
         results: detailedResults
