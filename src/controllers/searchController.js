@@ -1,7 +1,7 @@
 const dictionary = require('../../data/dictionary.json');
 
 exports.search = (req, res) => {
-    const { q, algo } = req.query;
+    const { q, algo, dir } = req.query;
 
     if (!q) {
         return res.status(400).json({ success: false, message: "Query parameter 'q' is required." });
@@ -24,9 +24,21 @@ exports.search = (req, res) => {
     const startTime = performance.now();
 
     dictionary.forEach(entry => {
-        // Search in both fields
-        const resultIndonesia = searchFunction(entry.indonesia.toLowerCase(), q.toLowerCase());
-        const resultDaerah = searchFunction(entry.daerah.toLowerCase(), q.toLowerCase());
+        let resultIndonesia = { matches: [], comparisons: 0 };
+        let resultDaerah = { matches: [], comparisons: 0 };
+
+        // Determine search direction
+        // id_to_regional -> Search only in Indonesia
+        // regional_to_id -> Search only in Daerah
+        // empty/null -> Search both (Default)
+
+        if (!dir || dir === 'id_to_regional') {
+            resultIndonesia = searchFunction(entry.indonesia.toLowerCase(), q.toLowerCase());
+        }
+
+        if (!dir || dir === 'regional_to_id') {
+            resultDaerah = searchFunction(entry.daerah.toLowerCase(), q.toLowerCase());
+        }
 
         // Aggregate comparisons (metrics)
         totalComparisons += (resultIndonesia.comparisons + resultDaerah.comparisons);

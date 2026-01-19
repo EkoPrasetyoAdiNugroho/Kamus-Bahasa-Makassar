@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 1. Get input values
             const keyword = document.getElementById('keyword').value.trim();
             const algorithm = document.getElementById('algorithm').value;
-            // const language = document.getElementById('language').value; // Not used in display logic yet but passed if needed
+            const language = document.getElementById('language').value;
 
             if (!keyword) return;
 
@@ -205,7 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // 3. Prepare payload for GET request
                 const params = new URLSearchParams({
                     q: keyword,
-                    algo: algorithm
+                    algo: algorithm,
+                    dir: language
                 });
 
                 const response = await fetch(`${API_URL}?${params.toString()}`, {
