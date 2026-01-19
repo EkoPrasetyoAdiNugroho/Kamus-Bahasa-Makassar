@@ -1,7 +1,5 @@
 # Balla' Bahasa - Kamus Digital Bahasa Makassar
 
-![Balla' Bahasa](public/assets/images/logo.png)
-
 **Balla' Bahasa** (Rumah Bahasa) adalah aplikasi kamus digital modern yang dirancang untuk melestarikan dan memudahkan pembelajaran Bahasa Makassar. Aplikasi ini menyediakan terjemahan Indonesia - Makassar (dan sebaliknya), dilengkapi dengan aksara Lontara, kelas kata, dan fitur pencarian cerdas.
 
 ## 🌟 Fitur Utama
