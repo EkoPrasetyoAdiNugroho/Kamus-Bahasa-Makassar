@@ -207,7 +207,20 @@
 
                 <div id="noResult" class="no-result hidden">
                     <div class="icon-box"><i class="fas fa-search-minus"></i></div>
-                    <p>Kata tidak ditemukan dalam kamus.</p>
+                    <p id="noResultMessage">Kata tidak ditemukan dalam kamus.</p>
+                </div>
+
+                <!-- Suggestions Section -->
+                <div id="suggestionsSection" class="suggestions-card hidden">
+                    <div class="card-header" style="background-color: #fef3c7; border-bottom: 1px solid #fcd34d;">
+                        <h2 style="color: #92400e;"><i class="fas fa-lightbulb" style="margin-right: 8px;"></i>Kata yang
+                            Mendekati</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="suggestionsList" class="suggestions-list">
+                            <!-- Suggestions dynamically inserted here -->
+                        </div>
+                    </div>
                 </div>
 
                 <div id="errorSection" class="error-msg hidden">

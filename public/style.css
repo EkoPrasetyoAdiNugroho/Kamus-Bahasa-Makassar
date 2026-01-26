@@ -273,6 +273,49 @@ select:focus {
     color: #666;
 }
 
+/* Suggestions Section */
+.suggestions-card {
+    background-color: #fffbf0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border: 1px solid #fcd34d;
+    overflow: hidden;
+}
+
+.suggestions-card .card-header {
+    background-color: #fef3c7;
+    border-bottom: 1px solid #fcd34d;
+}
+
+.suggestions-card .card-header h2 {
+    color: #92400e;
+}
+
+.suggestions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.suggestion-item {
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #fef3c7;
+    transform: translateX(3px);
+}
+
 /* Footer */
 .main-footer {
     background-color: #333;

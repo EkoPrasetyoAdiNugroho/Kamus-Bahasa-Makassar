@@ -222,10 +222,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const data = await response.json();
 
-                // 4. Handle Result
-                if (!data.results || data.results.length === 0) {
-                    showNoResult();
+
+
+                // 4. Handle Result based on hasExactMatch
+                if (!data.hasExactMatch || data.results.length === 0) {
+                    // Show "not found" message with keyword
+                    showNoResult(data.message || `Kata "${keyword}" tidak ditemukan dalam kamus.`);
                     addToHistory(keyword, algorithm, false, "-");
+
+                    // Show suggestions if available
+                    if (data.suggestions && data.suggestions.length > 0) {
+                        renderSuggestions(data.suggestions, data.metadata.performance);
+                    }
                 } else {
                     const firstResult = data.results[0];
                     const perf = data.metadata.performance;
@@ -258,6 +266,8 @@ document.addEventListener('DOMContentLoaded', () => {
         resultSection.classList.add('hidden');
         noResult.classList.add('hidden');
         errorSection.classList.add('hidden');
+        const suggestionsSection = document.getElementById('suggestionsSection');
+        if (suggestionsSection) suggestionsSection.classList.add('hidden');
     }
 
     function showLoading(isLoading) {
@@ -268,7 +278,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function showNoResult() {
+    function showNoResult(message) {
+        const msgElement = document.getElementById('noResultMessage');
+        if (msgElement && message) {
+            msgElement.textContent = message;
+        }
         noResult.classList.remove('hidden');
     }
 
@@ -286,6 +300,54 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('resTime').textContent = data.executionTime || 'N/A';
 
         resultSection.classList.remove('hidden');
+    }
+
+    function renderSuggestions(suggestions, performance) {
+        const suggestionsSection = document.getElementById('suggestionsSection');
+        const suggestionsList = document.getElementById('suggestionsList');
+
+        if (!suggestionsSection || !suggestionsList) return;
+
+        // Clear previous suggestions
+        suggestionsList.innerHTML = '';
+
+        // Render each suggestion
+        suggestions.forEach((suggestion, index) => {
+            const item = document.createElement('div');
+            item.className = 'suggestion-item';
+            item.style.cssText = 'padding: 12px 16px; background: white; border: 1px solid #fcd34d; border-radius: 8px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s;';
+            item.onmouseover = function () { this.style.backgroundColor = '#fef3c7'; };
+            item.onmouseout = function () { this.style.backgroundColor = 'white'; };
+
+            // Click to search this word
+            item.onclick = function () {
+                document.getElementById('keyword').value = suggestion.entry.indonesia;
+                document.getElementById('searchForm').dispatchEvent(new Event('submit'));
+            };
+
+            item.innerHTML = `
+                <div>
+                    <div style="font-weight: 600; color: #92400e;">${suggestion.entry.indonesia}</div>
+                    <div style="font-size: 0.9rem; color: #666;">${suggestion.entry.daerah}</div>
+                </div>
+                <div style="text-align: right;">
+                    <span style="background: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600;">
+                        ${suggestion.similarity.toFixed(0)}% mirip
+                    </span>
+                </div>
+            `;
+
+            suggestionsList.appendChild(item);
+        });
+
+        console.log('[DEBUG] renderSuggestions: Added', suggestions.length, 'items to suggestionsList');
+        console.log('[DEBUG] suggestionsList HTML:', suggestionsList.innerHTML.substring(0, 200));
+
+
+        // Force show suggestions section with multiple methods
+        suggestionsSection.classList.remove('hidden');
+        suggestionsSection.style.display = 'block'; // Force display
+        suggestionsSection.style.visibility = 'visible'; // Force visibility
     }
     // --- Explorer Logic ---
     function setupExplorer() {

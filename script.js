@@ -44,27 +44,32 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             // 4. Handle Result
-            // Backend returns: { metadata: {...}, results: [...] }
+            // Backend returns: { metadata: {...}, results: [...], suggestions: [...], hasExactMatch: boolean }
 
             if (!data.results || data.results.length === 0) {
-                showNoResult();
+                // No exact matches found
+                if (data.suggestions && data.suggestions.length > 0) {
+                    showNoResultWithSuggestions(keyword);
+                    renderSuggestions(data.suggestions);
+                } else {
+                    showNoResult();
+                }
             } else {
-                // For simplicity, take the first match
-                const firstResult = data.results[0];
-                const perf = data.metadata.performance;
-
-                // Construct display object
-                const displayData = {
-                    word: firstResult.entry.indonesia, // Show Indonesian word
-                    meaning: firstResult.entry.daerah, // Show Regional word as meaning
+                // Show metadata
+                const metadata = {
                     algorithm: data.metadata.algorithm.toUpperCase(),
-                    comparisons: perf.total_comparisons,
-                    // If we found a match, show the index (taking first index from whichever side matched)
-                    index: (firstResult.matches.indonesia.length > 0 ? firstResult.matches.indonesia[0] : (firstResult.matches.daerah.length > 0 ? firstResult.matches.daerah[0] : '-')),
-                    executionTime: `${perf.execution_time_ms} ms`
+                    keyword: data.metadata.keyword || keyword,
+                    comparisons: data.metadata.performance.total_comparisons,
+                    executionTime: `${data.metadata.performance.execution_time_ms} ms`,
+                    totalResults: data.results.length
                 };
 
-                renderResult(displayData);
+                renderResults(data.results, metadata);
+
+                // Also show suggestions if available
+                if (data.suggestions && data.suggestions.length > 0) {
+                    renderSuggestions(data.suggestions);
+                }
             }
 
         } catch (error) {
@@ -79,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultSection.classList.add('hidden');
         noResult.classList.add('hidden');
         errorSection.classList.add('hidden');
+        document.getElementById('suggestionsSection').classList.add('hidden');
     }
 
     function showLoading(isLoading) {
@@ -90,6 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showNoResult() {
+        document.getElementById('noResultMessage').textContent = 'Kata tidak ditemukan dalam kamus.';
+        noResult.classList.remove('hidden');
+    }
+
+    function showNoResultWithSuggestions(keyword) {
+        document.getElementById('noResultMessage').textContent =
+            `Kata "${keyword}" tidak ditemukan. Mungkin yang Anda maksud:`;
         noResult.classList.remove('hidden');
     }
 
@@ -98,14 +111,104 @@ document.addEventListener('DOMContentLoaded', () => {
         errorSection.classList.remove('hidden');
     }
 
-    function renderResult(data) {
-        document.getElementById('resWord').textContent = data.word || '-';
-        document.getElementById('resMeaning').textContent = data.meaning || '-';
-        document.getElementById('resAlgorithm').textContent = data.algorithm || '-';
-        document.getElementById('resComparisons').textContent = data.comparisons !== undefined ? data.comparisons : '-';
-        document.getElementById('resIndex').textContent = data.index !== undefined ? data.index : 'Not found';
-        document.getElementById('resTime').textContent = data.executionTime || 'N/A';
+    function renderResults(results, metadata) {
+        // Update metadata section
+        document.getElementById('resAlgorithm').textContent = metadata.algorithm || '-';
+        document.getElementById('resKeyword').textContent = metadata.keyword || '-';
+        document.getElementById('resComparisons').textContent = metadata.comparisons !== undefined ? metadata.comparisons : '-';
+        document.getElementById('resTime').textContent = metadata.executionTime || 'N/A';
+
+        // Update result count
+        const resultCountText = `Ditemukan ${metadata.totalResults} kata yang cocok`;
+        document.getElementById('resultCount').textContent = resultCountText;
+
+        // Clear previous results
+        const resultsList = document.getElementById('resultsList');
+        resultsList.innerHTML = '';
+
+        // Render each result
+        results.forEach((result, index) => {
+            const resultItem = document.createElement('div');
+            resultItem.className = 'result-list-item';
+
+            // Determine which field matched
+            const indoMatches = result.matches.indonesia.length > 0;
+            const daerahMatches = result.matches.daerah.length > 0;
+
+            let matchInfo = '';
+            if (indoMatches && daerahMatches) {
+                matchInfo = `<span class="match-badge">Cocok di kedua bahasa</span>`;
+            } else if (indoMatches) {
+                matchInfo = `<span class="match-badge">Cocok di Indonesia</span>`;
+            } else if (daerahMatches) {
+                matchInfo = `<span class="match-badge">Cocok di Daerah</span>`;
+            }
+
+            // Show index positions
+            const indexInfo = [];
+            if (indoMatches) {
+                indexInfo.push(`Indo: posisi ${result.matches.indonesia.join(', ')}`);
+            }
+            if (daerahMatches) {
+                indexInfo.push(`Daerah: posisi ${result.matches.daerah.join(', ')}`);
+            }
+
+            resultItem.innerHTML = `
+                <div class="word-pair">
+                    <div>
+                        <div class="word">${result.entry.indonesia}</div>
+                        <div class="translation">${result.entry.daerah}</div>
+                    </div>
+                    <div style="text-align: right; font-size: 0.85rem; color: #999;">
+                        #${index + 1}
+                    </div>
+                </div>
+                <div class="match-info">
+                    ${matchInfo}
+                    <span>${indexInfo.join(' • ')}</span>
+                </div>
+            `;
+
+            resultsList.appendChild(resultItem);
+        });
 
         resultSection.classList.remove('hidden');
+    }
+
+    function renderSuggestions(suggestions) {
+        if (!suggestions || suggestions.length === 0) return;
+
+        const suggestionsSection = document.getElementById('suggestionsSection');
+        const suggestionsList = document.getElementById('suggestionsList');
+        const suggestionCount = document.getElementById('suggestionCount');
+
+        // Clear previous suggestions
+        suggestionsList.innerHTML = '';
+
+        // Update count
+        suggestionCount.textContent = `${suggestions.length} kata serupa ditemukan`;
+
+        // Render each suggestion
+        suggestions.forEach((suggestion, index) => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.className = 'suggestion-item';
+
+            suggestionItem.innerHTML = `
+                <div class="word-pair">
+                    <div>
+                        <div class="word">${suggestion.entry.indonesia}</div>
+                        <div class="translation">${suggestion.entry.daerah}</div>
+                    </div>
+                    <div class="similarity-badge">
+                        ${suggestion.similarity.toFixed(0)}% cocok
+                    </div>
+                </div>
+            `;
+
+            suggestionsList.appendChild(suggestionItem);
+        });
+
+        // Show suggestions section
+        suggestionsSection.classList.remove('hidden');
     }
 });

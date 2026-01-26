@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Kamus Bahasa Daerah - String Matching</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for Academic Look -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="container">
@@ -26,7 +30,8 @@
                 <form id="searchForm">
                     <div class="form-group">
                         <label for="keyword">Kata Kunci</label>
-                        <input type="text" id="keyword" name="keyword" placeholder="Masukkan kata..." required autocomplete="off">
+                        <input type="text" id="keyword" name="keyword" placeholder="Masukkan kata..." required
+                            autocomplete="off">
                     </div>
 
                     <div class="form-row">
@@ -61,21 +66,10 @@
         <section id="resultSection" class="result-card hidden">
             <div class="card-header">
                 <h2>Hasil Pencarian</h2>
+                <p class="result-count" id="resultCount"></p>
             </div>
             <div class="card-body">
-                <div class="result-content">
-                    <div class="result-item main-result">
-                        <span class="label">Kata:</span>
-                        <span class="value" id="resWord">...</span>
-                    </div>
-                    <div class="result-item main-result">
-                        <span class="label">Arti:</span>
-                        <span class="value" id="resMeaning">...</span>
-                    </div>
-                </div>
-                
-                <hr class="divider">
-
+                <!-- Search Metadata -->
                 <div class="meta-info">
                     <h3>Detail Komputasi</h3>
                     <div class="info-grid">
@@ -84,12 +78,12 @@
                             <span class="value" id="resAlgorithm">...</span>
                         </div>
                         <div class="info-item">
-                            <span class="label">Jumlah Perbandingan:</span>
-                            <span class="value" id="resComparisons">0</span>
+                            <span class="label">Kata Kunci:</span>
+                            <span class="value" id="resKeyword">...</span>
                         </div>
                         <div class="info-item">
-                            <span class="label">Index Ditemukan:</span>
-                            <span class="value" id="resIndex">-1</span>
+                            <span class="label">Total Perbandingan:</span>
+                            <span class="value" id="resComparisons">0</span>
                         </div>
                         <div class="info-item">
                             <span class="label">Waktu Eksekusi:</span>
@@ -97,12 +91,32 @@
                         </div>
                     </div>
                 </div>
+
+                <hr class="divider">
+
+                <!-- Results List Container -->
+                <div id="resultsList" class="results-list">
+                    <!-- Results will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Suggestions Section -->
+        <section id="suggestionsSection" class="suggestions-card hidden">
+            <div class="card-header">
+                <h2>Kata yang Mungkin Anda Maksud</h2>
+                <p class="suggestion-count" id="suggestionCount"></p>
+            </div>
+            <div class="card-body">
+                <div id="suggestionsList" class="suggestions-list">
+                    <!-- Suggestions will be dynamically inserted here -->
+                </div>
             </div>
         </section>
 
         <!-- No Result Section -->
         <section id="noResult" class="no-result hidden">
-            <p>Kata tidak ditemukan dalam kamus.</p>
+            <p id="noResultMessage">Kata tidak ditemukan dalam kamus.</p>
         </section>
 
         <!-- Error Section -->
@@ -120,4 +134,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
