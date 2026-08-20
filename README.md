@@ -8,12 +8,6 @@ This project was developed to demonstrate and compare the performance of **Naive
 
 👉 **https://kamus-bahasa-makassar.vercel.app/**
 
-## 💻 Repository
-
-👉 **https://github.com/EkoPrasetyoAdiNugroho/Kamus-Bahasa-Makassar**
-
----
-
 ## ✨ Features
 
 ### 🔍 Two-Way Translation
